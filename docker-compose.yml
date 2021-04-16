@@ -1,0 +1,12 @@
+version: '3'
+services:
+  build-agent:
+    container_name: builder
+    image: communicator:latest
+    build: ./deltachat
+  test-agent:
+    container_name: tester
+    image: tests:latest
+    build: ./tests
+    depends_on:
+    - build-agent  

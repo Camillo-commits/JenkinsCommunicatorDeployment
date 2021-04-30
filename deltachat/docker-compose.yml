@@ -1,6 +1,6 @@
 version: '3'
 services:
   build-agent:
-    container_name: builder
+    container_name: builder-separate
     image: communicator:latest
     build: .

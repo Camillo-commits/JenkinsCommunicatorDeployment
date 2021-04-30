@@ -1,6 +1,6 @@
 version: '3'
 services:
   test-agent:
-    container_name: tester
+    container_name: tester-separate
     image: tests:latest
     build: .

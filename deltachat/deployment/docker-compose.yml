@@ -1,0 +1,6 @@
+version: '3'
+services:
+  deploy-agent:
+    container_name: deltachat-deployer
+    image: communicator:latest
+    build: .
